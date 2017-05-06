@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AfjZadanie4", "AfjZadanie4\AfjZadanie4.csproj", "{73BF2BA0-525A-4F32-ABF1-6FEEE3AC7D41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AfjZadanie4Tests", "AfjZadanie4Tests\AfjZadanie4Tests.csproj", "{373DA21B-A50D-47FA-A02D-2FB120D80C90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73BF2BA0-525A-4F32-ABF1-6FEEE3AC7D41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73BF2BA0-525A-4F32-ABF1-6FEEE3AC7D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73BF2BA0-525A-4F32-ABF1-6FEEE3AC7D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73BF2BA0-525A-4F32-ABF1-6FEEE3AC7D41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{373DA21B-A50D-47FA-A02D-2FB120D80C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{373DA21B-A50D-47FA-A02D-2FB120D80C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{373DA21B-A50D-47FA-A02D-2FB120D80C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{373DA21B-A50D-47FA-A02D-2FB120D80C90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
