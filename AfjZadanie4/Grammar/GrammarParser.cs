@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace AfjZadanie4
+namespace AfjZadanie4.Grammar
 {
-    public class GrammarParser
+    public static class GrammarParser
     {
         public static Grammar Parse(List<string> grammarStringLines)
         {

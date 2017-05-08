@@ -42,16 +42,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Grammar.cs" />
-    <Compile Include="GrammarCorrector.cs" />
-    <Compile Include="GrammarParser.cs" />
-    <Compile Include="GrammarReader.cs" />
+    <Compile Include="Grammar\Grammar.cs" />
+    <Compile Include="Grammar\GrammarCorrector.cs" />
+    <Compile Include="Grammar\GrammarParser.cs" />
+    <Compile Include="Grammar\GrammarReader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rule.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Grammar\Rules\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
