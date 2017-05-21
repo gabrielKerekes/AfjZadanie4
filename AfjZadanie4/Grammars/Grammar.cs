@@ -1,19 +1,20 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using AfjZadanie4.Grammars.Rules;
+using AfjZadanie4.Grammars.Symbols;
 
-namespace AfjZadanie4.Grammar
+namespace AfjZadanie4.Grammars
 {
     public class Grammar
     {
-        // todo: ked pojdu nonterminals a terminals na char tak aj toto...
-        public const string DefaultStartSymbol = "S";
+        public static readonly NonTerminalSymbol DefaultStartSymbol = new NonTerminalSymbol("S");
 
-        public string StartSymbol { get; set; }
-        public List<string> NonTerminals { get; set; }
-        public List<string> Terminals { get; set; }
+        public NonTerminalSymbol StartSymbol { get; set; }
+        public List<NonTerminalSymbol> NonTerminals { get; set; }
+        public List<TerminalSymbol> Terminals { get; set; }
         public List<Rule> Rules { get; set; }
 
-        public Grammar(List<string> nonTerminals, List<string> terminals, List<Rule> rules)
+        public Grammar(List<NonTerminalSymbol> nonTerminals, List<TerminalSymbol> terminals, List<Rule> rules)
         {
             NonTerminals = nonTerminals;
             Terminals = terminals;

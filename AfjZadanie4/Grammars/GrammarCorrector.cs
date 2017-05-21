@@ -1,6 +1,7 @@
-﻿using System.Linq;
+﻿using AfjZadanie4.Grammars.Rules;
+using AfjZadanie4.Grammars.Symbols;
 
-namespace AfjZadanie4.Grammar
+namespace AfjZadanie4.Grammars
 {
     public static class GrammarCorrector
     {
@@ -8,25 +9,18 @@ namespace AfjZadanie4.Grammar
         {
             AddNewStartSymbolIfNeeded(grammar);
         }
-
-        // todo: return type asi nemusi byt
+        
         private static void AddNewStartSymbolIfNeeded(Grammar grammar)
         {
-            if (IsStartSymbolOnRightSide(grammar))
+            if (GrammarChecker.IsStartSymbolOnRightSide(grammar.Rules, grammar.StartSymbol))
             {
                 AddNewStartSymbol(grammar);
             }
         }
 
-
-        private static bool IsStartSymbolOnRightSide(Grammar grammar)
-        {
-            return grammar.Rules.Any(r => r.RightSide.Contains(grammar.StartSymbol));
-        }
-
         private static void AddNewStartSymbol(Grammar grammar)
         {
-            grammar.StartSymbol = "S'";
+            grammar.StartSymbol = new NonTerminalSymbol("S'");
             grammar.NonTerminals.Add(grammar.StartSymbol);
             grammar.Rules.Add(new Rule(grammar.StartSymbol, Grammar.DefaultStartSymbol));
         }

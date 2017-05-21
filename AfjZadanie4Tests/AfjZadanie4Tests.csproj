@@ -56,9 +56,13 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="GrammarCorrectorTests.cs" />
-    <Compile Include="GrammarParserTests.cs" />
-    <Compile Include="GrammarTests.cs" />
+    <Compile Include="Grammars\GrammarCorrectorTests.cs" />
+    <Compile Include="Grammars\GrammarCheckerTests.cs" />
+    <Compile Include="Grammars\Rules\StateRuleTests.cs" />
+    <Compile Include="Grammars\Symbols\SymbolParserTests.cs" />
+    <Compile Include="Grammars\GrammarParserTests.cs" />
+    <Compile Include="Grammars\GrammarTests.cs" />
+    <Compile Include="LR0AutomataCreatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RuleTests.cs" />
   </ItemGroup>

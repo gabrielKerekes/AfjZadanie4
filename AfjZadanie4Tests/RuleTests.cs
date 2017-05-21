@@ -1,10 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AfjZadanie4;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using AfjZadanie4.Grammars.Rules;
+using AfjZadanie4.Grammars.Symbols;
 
 namespace AfjZadanie4.Tests
 {
@@ -14,11 +11,15 @@ namespace AfjZadanie4.Tests
         [TestMethod()]
         public void ToStringTest()
         {
-            var rule = new Rule("S", "ab");
-            Assert.AreEqual(rule.ToString(), "S->ab");
+            var nonTerminal_S = new NonTerminalSymbol("S");
+            var terminal_a = new TerminalSymbol("a");
+            var terminal_b = new TerminalSymbol("b");
 
-            rule = new Rule("", "");
-            Assert.AreEqual(rule.ToString(), "->");
+            var rule = new Rule(nonTerminal_S, new List<Symbol>{ terminal_a, terminal_b });
+            Assert.AreEqual("S->ab", rule.ToString());
+
+            rule = new Rule(null, new List<Symbol>());
+            Assert.AreEqual("", rule.ToString());
         }
     }
 }

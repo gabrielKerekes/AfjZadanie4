@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Linq;
 
-namespace AfjZadanie4.Grammar
+namespace AfjZadanie4.Grammars
 {
     public class GrammarReader
     {
